@@ -627,14 +627,20 @@ footer{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 16px;
 }
 .monster-list li{
-	width: 10%;
 	display: inline-block;
 	background: white;
 }
 .monster-list li img{
-	width: 100%;
+	width: 139px;
+	height: 200px;
+	background: red;
 }
 
 /*******content inside introduction section*******/
