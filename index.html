@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Castle Defend</title>
+	<title>Fantasy Defense</title>
 	<!--Bootstrap css stylesheet-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--Google font-->
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
 	<!--all the custom css stylesheets-->
-	<link rel="stylesheet" type="text/css" href="./stylesheet/stylesheet-index.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet-index.css">
 </head>
 <body>
 
@@ -19,131 +20,154 @@
 		<!--top nav bar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#sss"><img class="logo" src="./images/logo/logo_final.png"> Castle Defend</a>
+				<a class="navbar-brand" href="#game"><img class="logo" src="./images/logo_final.png">Fantasy Defense</a>
+				<button type="button" class="btn btn-danger home-navbar-button">
+					<span class="glyphicon glyphicon-menu-hamburger home-nav-text"></span>
+				</button>
 			</div>
+
 			<ul class="nav navbar-nav">
-				<li class="empty-li"><a href="#">.</a></li>
-				<li class="active nonempty-li"><a href="#s1">Game</a></li>
-				<li class="nonempty-li"><a href="#s2">Introduction</a></li>
-				<li class="nonempty-li"><a href="#s3">Contact</a></li>
+				<!-- <li class="empty-li"><a href="#">.</a></li> -->
+				<li class="active nonempty-li"><a href="#game">Game</a></li>
+				<li class="nonempty-li"><a href="#introduction">Introduction</a></li>
+				<li class="nonempty-li"><a href="#contact">Contact</a></li>
 			</ul>
+
 		</nav>
 
-
-
+		<a name="game"></a>
 		<div class="section-space"></div>
-
-
+		
 		<!--game section-->
 		<section class="section-game">
 			<center>
-			<div class="game-container">
-				<div class="game-left">
-					<div>sss</div>
-					<div>ddddd</div>
-					<div>ssssssss</div>
-				</div>
-				<div class="game-right">
-					<div class="button-container">
-						<div class="button-description1">Enjoy the game without signing in</div>
-						<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-user"></span>Play as Guest</button>
-						<div class="button-description2">Sign in to save your game progress</div>
-						<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Play with Google Account</button>
+			<div class="game-super-container">
+			<div class="game-title-container">
+				<div class="title-logo-div"><img src="./images/logo_final.png"></div>
+				<div class="title-div">Fantasy Defense</div>
+			</div>
+			<div class="game-description"><span>Fantasy Defense</span> is <div>a game that enbales you to enjoy</div> defending against attacks from <div> monsters in Chinese mythology!</div></div>
+			<div class="game-right">
+			<div class="play-container">
+				<div class="monster-container"><img src="./images/ppl_FeiLian.png"></div>
+
+				<div class="button-description-contianer">
+					<div class="button-description-contianer2">
+					<div class="button-description1"><span>Play as Guest: </span>Play the game without signing in</div>
+					<div><span>Sign in and Play: </span>Sign in with Google to save your game progress</div>
+					<div class="color-grey"></div>
 					</div>
 				</div>
+
+				<div class="button-container">
+					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-user"></span>Play as Guest</button>
+					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Sign in and Play</button>
+				</div>
 			</div>
-			</center>
+			</div>
+
+			</div>
+			</center>	
+			
 		</section>
 
 
-
-
-
-
-
+		<a name="introduction"></a>
+		<div class="section-space2"></div>
 		<!--introduction section-->
 		<section class="section-introduction">
+
 			<center>
-			<div class="section-name">Introduction</div>
-			<div class="screenshot-container">
-					<div class="screenshot-description"></div>
-					<div class="screenshot"></div>
-				
-					<div class="screenshot"></div>
-					<div class="screenshot-description"></div>
-				
-					<div class="screenshot-description"></div>
-					<div class="screenshot"></div>
-
-			</div>
+			<ul class="monster-list">
+				<li>
+					<img src="./images/ppl_FeiLian.png">
+					<center><div>Fei Lian</div></center>
+				</li>
+				<li>
+					<img src="./images/ppl_HongHaier.png">
+					<center><div>Red Boy</div></center>
+				</li>
+				<li>
+					<img src="./images/ppl_Qilin.png">
+					<center><div>Kirin</div></center>
+				</li>
+				<li>
+					<img src="./images/ppl_HuoDou.png">
+					<center><div>Huo Dou</div></center>
+				</li>
+				<li>
+					<img src="./images/ppl_CiTie.png">
+					<center><div>Ci Tie</div></center>
+				</li>
+			</ul>
 			</center>
+
+			<div class="color-container-black"></div>
 		</section>
+		
+		
 
-
-
+		<a name="contact"></a>
+		<div class="section-space2"></div>
 		<!--contact section-->
 		<section class="section-contact">
-			<center>
-			<div class="section-name">Contact</div>
-			<div class="person-container">
-				<div class="person">
-					<table>
-						<tr><td>Professor</td></tr>
-						<tr><td>Richard McKenna</td></tr>
-						<tr><td>richard@cs.stonybrook.edu</td></tr>
-					</table>
-				</div>
-				<div class="person">
-					<table>
-						<tr><td>Lead Programmer</td></tr>
-						<tr><td>Jun Hao</td></tr>
-						<tr><td>Jun.hao@stonybrook.edu</td></tr>
-					</table>
-				</div>
-				<div class="person">
-					<table>
-						<tr><td>Lead Designer</td></tr>
-						<tr><td>Qixiang Chen</td></tr>
-						<tr><td>qixiang.chen@stonybrook.edu</td></tr>
-					</table>
-				</div>
-				<div class="person">
-					<table>
-						<tr><td>Data Designer</td></tr>
-						<tr><td>Haozhi Qu</td></tr>
-						<tr><td>haozhi1798@gmail.com</td></tr>
-					</table>
-				</div>
-				<div class="person">
-					<table>
-						<tr><td>Project Manager</td></tr>
-						<tr><td>Yinquan Hao</td></tr>
-						<tr><td>Yinquan.hao@stonybrook.edu</td></tr>
-					</table>
-				</div>
-				<div class="person">
-					<table>
-						<tr><td>Mobile Developer</td></tr>
-						<tr><td>Liwen Fan</td></tr>
-						<tr><td>Liwen.Fan@stonybrook.edu</td></tr>
-					</table>
-				</div>
+		<center>
+			<div class="contact-text">Fantasy Defense was developed by Team Yellow Life. Feel free to contact us if you have any questions.</div>
+
+			<ul class="member-container">
+				<li class="li2 li4">
+					<div>Professor</div>
+					<div>Richard McKenna</div>
+				</li>
+				<li class="li1 li4">
+					<div>Lead Programmer</div>
+					<div>Jun Hao</div>
+				</li>
+				<li class="li2 li4">
+					<div>Lead Designer</div>
+					<div>Qixiang Chen</div>
+				</li>
+				<li class="li1 li3">
+					<div>Data Designer</div>
+					<div>Haozhi Qu</div>
+				</li>
+				<li class="li2 li3">
+					<div>Project Manager</div>
+					<div>Yinquan Hao</div>
+				</li>
+				<li class="li1 li3">
+					<div>Mobile Developer</div>
+					<div>Liwen Fan</div>
+				</li>
+			</ul>
+
+			
+			<div class="team-email">
+				<a href="mailto:lifeyellow4@gmail.com">lifeyellow4@gmail.com</a>
 			</div>
-			</center>
+		</center>
 		</section>
-
-
-
+		
 	</div>
 
 
-	<!--copyright statement footer-->
-	<footer><center><div class="copyright">© 2016 Castle Defend. All rights reserved</div></center></footer>
+
+
+
+	<!--footer-->
+	<footer>
+		<center>
+		<div class="copyright">© 2016 Fantasy Defense. All rights reserved</div>
+		</center>
+	</footer>
+
 
 
 
 	<!--jQuery and Bootstrap scripts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--all the custom scripts-->
+	<script src="./scripts/main.js"></script>
 </body>
 </html>
