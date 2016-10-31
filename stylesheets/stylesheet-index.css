@@ -631,16 +631,18 @@ footer{
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 20px;
 }
 .monster-list li{
 	display: inline-block;
 	background: white;
+	margin: 10px;
 }
 .monster-list li img{
 	width: 139px;
 	height: 200px;
 	background: red;
+	padding: 25px;
 }
 
 /*******content inside introduction section*******/
