@@ -376,17 +376,26 @@ footer{
 
 
 /*******content inside game section*******/
+.game-super-container{
+	position: relative;
+	width: 850px;
+}
+.button-container{
+	position: absolute;
+	top: 90px;
+	right: 50px;
+}
 .button-container button{
 	display: block;
-	height: 45px;
-	width: 275px;
+	height: 36px;
+	width: 220px;
 	border-radius: 3px;
 	box-shadow: 3px 3px 19px -2px #4cae4c;
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 10px 0px;
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 }
 .button-container .glyphicon{
 	padding: 0px 10px 0px 0px;
@@ -395,22 +404,22 @@ footer{
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 20px;
 	border: 5px solid #d9d9d9;
 	border-radius: 5px;
+	text-align: left;
+	width: 310px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 16px;
 }
 .button-description1{
-	padding: 0px 0px 10px 0px;
-}
-.button-description-contianer{
-	
-	text-align: left;
+	padding: 0px 0px 5px 0px;
 }
 .button-description-contianer2{
 	position: relative;
 }
 .color-grey{
-
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -423,22 +432,20 @@ footer{
 .button-description-contianer div span{
 	color: #990000;
 }
-.monster-container img{
-	height: 240px;
-	width: 175px;
-}
 .game-description{
+	position: absolute;
+	top: 10px;
+
 	/*font*/
 	font-family: 'Signika';/*can use different font later*/
 	font-weight: bold;
-	font-size: 38px;
+	font-size: 34px;
 	text-align: left;
 }
 .game-description span{
-	font-size: 58px;
+	font-size: 54px;
 	color: #990000;
 }
-
 .game-title-container .title-div{
 	position: relative;
 	top: 7px;
@@ -457,43 +464,6 @@ footer{
 	font-weight: bold;
 	font-size: 50px;
 }
-@media screen and (min-width: 1200px){
-.play-container{
-	width: 565px;
-	position: relative;
-}
-.monster-container{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-.button-description-contianer{
-	width: 380px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-.button-container{
-	position: absolute;
-	top: 105px;
-	right: 43px;
-}
-.game-super-container{
-	position: relative;
-	width: 1100px;
-}
-.game-description{
-	position: absolute;
-	top: 10px;
-}
-.game-right{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-}
-
-@media screen and (max-width: 1199px){
 .play-container{
 	width: 380px;
 	position: relative;
@@ -507,57 +477,58 @@ footer{
 	height: 80px;
 	width: 58px;
 }
-.button-description-contianer{
-	width: 310px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-.button-description-contianer{
-	font-size: 16px;
-	border: 5px solid #d9d9d9;
-	border-radius: 5px;
-}
-.button-container{
-	position: absolute;
-	top: 90px;
-	right: 50px;
-}
-.game-description{
-	font-size: 34px;
-}
-.game-description span{
-	font-size: 54px;
-}
-.game-super-container{
-	position: relative;
-	width: 850px;
-}
-.game-description{
-	position: absolute;
-	top: 10px;
-}
 .game-right{
 	position: absolute;
 	top: 0px;
 	right: 0px;
 }
-.button-container button{
-	display: block;
-	height: 36px;
-	width: 220px;
-	border-radius: 3px;
-	box-shadow: 3px 3px 19px -2px #4cae4c;
-	margin: 0px 0px 10px 0px;
+
+
+@media screen and (min-width: 1200px){
+.monster-container img{
+	height: 240px;
+	width: 175px;
+}
+.play-container{
+	width: 565px;
+	position: relative;
+}
+.monster-container{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.button-description-contianer{
+	width: 380px;
 	/*font*/
-	font-family: 'Alegreya Sans';/*can use different font later*/
-	font-weight: bold;
-	font-size: 16px;
+	font-size: 20px;
 }
 .button-description1{
-	padding: 0px 0px 5px 0px;
+	padding: 0px 0px 10px 0px;
+}
+.button-container{
+	position: absolute;
+	top: 105px;
+	right: 43px;
+}
+.button-container button{
+	height: 45px;
+	width: 275px;
+	margin: 0px 0px 15px 0px;
+	font-size: 18px;
+}
+.game-super-container{
+	position: relative;
+	width: 1100px;
+}
+.game-description{
+	font-size: 38px;
+}
+.game-description span{
+	font-size: 58px;
 }
 }
+
 
 @media screen and (max-width: 900px){
 .game-description{
@@ -589,6 +560,7 @@ footer{
 	margin: 10px 0px 0px 0px;
 }
 }
+
 
 @media screen and (max-width: 550px){
 .game-title-container img{
