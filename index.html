@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--Google font-->
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
 	<!--all the custom css stylesheets-->
 	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet-index.css">
 </head>
@@ -60,8 +60,14 @@
 				</div>
 
 				<div class="button-container">
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-user"></span>Play as Guest</button>
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>Sign in and Play</button>
+					<form method="get" action="splash.html">
+						<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-user"></span>Play as Guest</button>
+
+					</form>
+
+					<button id="signinButton" type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in" data-onsuccess="onSignIn"></span>Sign in and Play</button>
+
+					
 				</div>
 			</div>
 			</div>
@@ -78,6 +84,8 @@
 		<section class="section-introduction">
 
 			<center>
+			<div class="section-name">Introduction</div>
+			<div class="story">In the ancient time of China, Chi You the leader of the monster tribe started a rebellion	to overturn the ruling of Yellow Emperor. Yellow Emperor united his tribe with another powerful tribe leader, Yan Emperor to against Chi You. Right before Chi You was defeated, </div>
 			<ul class="monster-list">
 				<li>
 					<center>
@@ -113,6 +121,7 @@
 		<!--contact section-->
 		<section class="section-contact">
 		<center>
+			<div class="section-name">Contact</div>
 			<div class="contact-text">Fantasy Defense was developed by Team Yellow Life. Feel free to contact us if you have any questions.</div>
 
 			<ul class="member-container">
@@ -125,11 +134,11 @@
 					<div>Jun Hao</div>
 				</li>
 				<li class="li2 li4">
-					<div>Lead Designer</div>
+					<div>Data Designer</div>
 					<div>Qixiang Chen</div>
 				</li>
 				<li class="li1 li3">
-					<div>Data Designer</div>
+					<div>Lead Designer</div>
 					<div>Haozhi Qu</div>
 				</li>
 				<li class="li2 li3">
@@ -169,6 +178,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!--all the custom scripts-->
-	<script src="./scripts/main.js"></script>
+	<script src="./scripts/script-index.js"></script>
 </body>
 </html>
