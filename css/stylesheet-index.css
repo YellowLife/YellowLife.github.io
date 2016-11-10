@@ -677,7 +677,7 @@ footer{
 
 @media screen and (max-width: 550px){
 .monster-list{
-	width: 305px;
+	width: 285px;
 	font-size: 17px;
 }
 .monster-list .mo{
@@ -760,7 +760,7 @@ footer{
 }
 @media screen and (max-width: 550px){
 .tower-list{
-	width: 305px;
+	width: 285px;
 	font-size: 17px;
 }
 .tower-list .to{
