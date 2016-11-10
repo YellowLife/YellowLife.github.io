@@ -5,6 +5,18 @@ body{
 *{
 	box-sizing: content-box;
 }
+.btn{
+	outline: none !important;
+}
+.btn:focus{
+	outline: none !important;
+}
+.btn:active{
+	outline: none !important;
+}
+.glyphicon{
+	top: 2px;
+}
 /*******overwrite boostrap for body*******/
 
 
@@ -20,29 +32,18 @@ body{
 	height: 100%;
 	width: 100%;
 
-	background: url(../images/bg_base.png);
+	background: url(../img/bg_base.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 }
-.home-container{/*!!!!!!!!change to #cccccc later!!!!!!!!!!!!!!!!!!!*/
+.home-container{
 	min-height: 100%;
 }
 section{
 	width: 100%;
-	
-	/*padding: 100px 0px 100px 0px;*/
 }
-/*hr{
-	height: 3px;
-	color: #262626;
-	background: #262626;
-	width: 90%;
-	margin: 0;
-	padding: 0;
-	border: none;
-}*/
 .section-space{
 	height: 55px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
 }
@@ -84,15 +85,18 @@ section{
 }
 .section-introduction{
 	position: relative;
-	height: 600px;
-	
+	-webkit-box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
+	box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
 }
 .section-contact{
+	-webkit-box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
+	-moz-box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
+	box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
 	padding: 0px 0px 50px 0px;/*for copyright footer stay in buttom*/
 	/*50+50*/
 }
 footer{
-	background: red;
 	width: 100%;
 	height: 50px;/*for copyright footer stay in buttom*/
 	margin-top: -50px;/*for copyright footer stay in buttom*/
@@ -108,7 +112,7 @@ footer{
 	opacity: 0.7;
 	background: #262626;
 }
-.color-container-red{
+/*.color-container-red{
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -117,14 +121,26 @@ footer{
 	z-index: -1;
 	opacity: 0.6;
 	background: #ff3333;
-}
+}*/
 .section-name{
 	/*font*/
-	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-family: 'Signika';/*can use different font later*/
 	font-weight: bold;
-	font-size: 38px;
+	font-size: 42px;
 	position: relative;
 	padding: 25px 0px 20px 0px;
+}
+@media screen and (max-width: 900px){
+.section-name{
+	font-size: 37px;
+	padding: 25px 0px 20px 0px;
+}
+}
+@media screen and (max-width: 550px){
+.section-name{
+	font-size: 30px;
+	padding: 25px 0px 20px 0px;
+}
 }
 .section-introduction .section-name{
 	color: #d9d9d9;
@@ -212,21 +228,6 @@ footer{
 	margin: 0px;
 	background: #4d0000;
 }
-/*.empty-li{
-	width: 0px;
-	overflow: hidden;
-}*/
-/*.navbar-nav .empty-li a{
-	height: 55px;
-	padding: 0px;
-	margin: 0px;
-	background: #0e2a3e;
-
-
-	font-family: 'Alegreya Sans';
-	font-weight: bold;
-	font-size: 18px;
-}*/
 .navbar-nav .nonempty-li a{
     width: 180px;
     height: 55px;
@@ -277,12 +278,6 @@ footer{
 
 
 /*responsive for top nav*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!need to add one media query for mobile!!!!!!!!!!!*/
-/*@media screen and (max-width: 1200px){
-.navbar-nav .nonempty-li a{
-	width: 150px;
-}
-}*/
 @media screen and (max-width: 1200px){/*767*/
 .navbar-nav{
 	display: none;
@@ -297,9 +292,6 @@ footer{
 .home-navbar-button{
 	display: inline-block;
 }
-/*.navbar-nav .empty-li{
-	display: none;
-}*/
 .navbar-nav .nonempty-li a{
     width: 100%;
 }
@@ -351,11 +343,6 @@ footer{
 .navbar-nav li{
 	height: 45px;
 }
-/*.navbar-nav .empty-li a{
-	height: 45px;
-
-	font-size: 15px;
-}*/
 .navbar-nav .nonempty-li a{
 	height: 45px;
 	line-height: 45px;
@@ -598,6 +585,31 @@ footer{
 
 
 /*******content inside introduction section*******/
+.story{
+	font-family: 'Signika';
+	width: 58%;
+	font-size: 22px;
+	color: #d9d9d9;
+	text-align: left;
+}
+@media screen and (max-width: 900px){
+.story{
+	width: 70%;
+	font-size: 18px;
+}	
+}
+@media screen and (max-width: 900px){
+.story{
+	font-size: 20px;
+}
+}
+@media screen and (max-width: 550px){
+.story{
+	width: 90%;
+	font-size: 18px;
+}
+}
+
 .monster-list{
 	list-style-type: none;
 	padding: 0;
@@ -606,25 +618,146 @@ footer{
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 21px;
 }
 .monster-list li{
 	display: inline-block;
+}
+.monster-list .mo{
+	margin: 15px;
+}
+.monster-list .mo div{
 	background: white;
+	padding: 7px 0px 7px 0px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 255, 255,0.7);
+}
+.monster-list .mo img{
+	width: 132px;
+	height: 190px;
+	background: rgba(255, 0, 0, 0.7);
+	padding: 12px 25px 20px 25px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 0, 0,0.7);
+}
+.intro-subtitle{
+	font-family: 'Signika';
+	font-size: 30px;
+	font-weight: bold;
+	color: #ff8080;
+	padding: 32px 0px 5px 0px;
+}
+@media screen and (max-width: 1200px){
+.monster-list{
+	width: 700px;
+}
+}
+@media screen and (max-width: 900px){
+.monster-list{
+	width: 540px;
+	font-size: 19px;
+}
+.monster-list .mo img{
+	width: 95px;
+	height: 137px;
+	background: rgba(255, 0, 0, 0.7);
+	padding: 12px 17px 12px 17px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 0, 0,0.7);
+
+}
+.intro-subtitle{
+	font-size: 25px;
+	padding: 23px 0px 3px 0px;
+}
+}
+
+@media screen and (max-width: 550px){
+.monster-list{
+	width: 315px;
+	font-size: 17px;
+}
+.monster-list .mo{
 	margin: 10px;
 }
-.monster-list li img{
-	width: 139px;
-	height: 200px;
-	background: red;
-	padding: 25px;
+.intro-subtitle{
+	font-size: 23px;
+	padding: 21px 0px 3px 0px;
 }
-.story{
+}
+
+.intro-subtitle2{
 	font-family: 'Signika';
-	width: 950px;
-	font-size: 22px;
-	color: #cccccc;
-	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffbf80;
+	padding: 30px 0px 5px 0px;
+}
+.tower-list{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+}
+.tower-list li{
+	display: inline-block;
+}
+.tower-list .to{
+	margin: 15px;
+}
+.tower-list .to div{
+	background: white;
+	padding: 7px 0px 7px 0px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 255, 255,0.7);
+}
+.tower-list .to img{
+	width: 132px;
+	height: 132px;
+	background: rgba(255, 140, 26, 0.7);
+	padding: 20px 25px 20px 25px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 140, 26, 0.7);
+}
+@media screen and (max-width: 1200px){
+.tower-list{
+	width: 700px;
+}
+}
+@media screen and (max-width: 900px){
+.tower-list{
+	width: 540px;
+	font-size: 19px;
+}
+.tower-list .to img{
+	width: 95px;
+	height: 95px;
+	background: rgba(255, 140, 26, 0.7);
+	padding: 12px 17px 12px 17px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 140, 26, 0.7);
+}
+.intro-subtitle2{
+	font-size: 25px;
+	padding: 23px 0px 3px 0px;
+}
+}
+@media screen and (max-width: 550px){
+.tower-list{
+	width: 315px;
+	font-size: 17px;
+}
+.tower-list .to{
+	margin: 10px;
+}
+.intro-subtitle2{
+	font-size: 23px;
+	padding: 21px 0px 3px 0px;
+}
 }
 /*******content inside introduction section*******/
 
@@ -634,29 +767,29 @@ footer{
 .member-container{
 	list-style-type: none;
 	height: 160px;
-	width: 675px;
+	width: 800px;
 	margin: 0;
 	padding: 0px 0px 0px 20px;
 	text-align: left;
 }
 .member-container li{
-	width: 175px;
-	
+	width: 185px;
 	display: inline-block;
 	float: left;
 
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 25px;
 }
 .li3{
-	padding: 0px 20px 0px 30px;
+	padding: 0px 20px 0px 60px;
 }
 .li4{
-	padding: 0px 20px 30px 30px;
+	padding: 0px 20px 30px 60px;
 }
 .team-email{
+	padding: 18px 0px 13px 0px;
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
@@ -665,43 +798,63 @@ footer{
 .team-email a{
 	color: #333;
 }
+.team-email .glyphicon{
+	padding: 0px 5px 0px 0px;
+}
 .contact-text{
-	width: 580px;
-	text-align: left;
 	/*font*/
 	font-family: 'Alegreya Sans';/*can use different font later*/
 	font-weight: bold;
-	font-size: 20px;
-	padding: 0px 0px 20px 0px;
+	font-size: 21px;
+	padding: 0px 0px 30px 0px;
 }
-
-@media screen and (max-width: 720px){
+.contact-text2{
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+	padding: 25px 0px 0px 0px;
+}
+.team-email .glyphicon{
+	top: 7px;
+}
+@media screen and (max-width: 900px){
 .member-container{
 	height: 230px;
-	width: 450px;
+	width: 470px;
 	padding: 0px 0px 0px 20px;
 }
 .member-container li{
+	font-size: 23px;
 	padding: 0px 20px 20px 30px;
 }
 .contact-text{
-	width: 360px;
 	font-size: 20px;
-	padding: 0px 0px 30px 0px;
+	padding: 0px 0px 25px 0px;
+}
+.contact-text2{
+	font-size: 20px;
+	padding: 15px 0px 0px 0px;
+}
+.team-email{
+	padding: 18px 0px 15px 0px;
+	font-size: 35px;
+}
+.team-email .glyphicon{
+	top: 5px;
 }
 }
 
 
 @media screen and (max-width: 550px){
 .member-container{
-	height: 170px;
+	height: 165px;
 	width: 285px;
 	padding: 0px 0px 0px 15px;
 }
 .member-container li{
 	width: 135px;
 	font-size: 18px;
-	
 }
 .member-container .li1{
 	padding: 0px 0px 10px 0px;
@@ -710,12 +863,22 @@ footer{
 	padding: 0px 12px 10px 0px;
 }
 .team-email{
-	font-size: 30px;
+	padding: 15px 0px 5px 0px;
+	font-size: 28px;
 }
 .contact-text{
-	width: 250px;
 	font-size: 16px;
 	padding: 0px 0px 20px 0px;
+}
+.contact-text2{
+	font-size: 16px;
+	padding: 5px 0px 0px 0px;
+}
+.team-email .glyphicon{
+	padding: 0px 2px 0px 0px;
+}
+.team-email .glyphicon{
+	top: 4px;
 }
 }
 /*******content inside contact section*******/
