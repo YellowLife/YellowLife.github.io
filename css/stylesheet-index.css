@@ -866,7 +866,7 @@ footer{
 
 @media screen and (max-width: 550px){
 .member-container{
-	height: 165px;
+	height: 160px;
 	width: 285px;
 	padding: 0px 0px 0px 15px;
 }
@@ -890,7 +890,7 @@ footer{
 }
 .contact-text2{
 	font-size: 15px;
-	padding: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 .team-email .glyphicon{
 	padding: 0px 2px 0px 0px;
